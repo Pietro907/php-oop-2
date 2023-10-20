@@ -11,14 +11,16 @@ class Prodotti
     public $immagine;
     public $icona;
     public $quantita;
+    public $categorie;
 
-    public function __construct($nome, $prezzo, $immagine, Categorie $icona, $quantita,) {
+    public function __construct($nome, $prezzo, $immagine, Categorie $categorie, $icona, $quantita,) {
 
         $this->nome = $nome;
         $this->prezzo = $prezzo;
         $this->immagine = $immagine;
         $this->icona = $icona;
         $this->quantita = $quantita;
+        $this->categorie = $categorie;
     }
 
 
@@ -39,7 +41,11 @@ class Categorie {
 
 $scalibor = new Prodotti('Scalibor', '80€', 'https://picsum.photos/400/500', new Categorie('Cane'),'fa-solid fa-dog', '1');
 
-$articoliArray = array($scalibor);
+$articoliArray = array($scalibor, $scalibor, $scalibor, $scalibor, $scalibor, $scalibor);
+
+$result = $prodotti->categorie?->categoria;
+
+echo $result;
 
 ?>
 
@@ -81,7 +87,7 @@ $articoliArray = array($scalibor);
                     <h3><?php echo $info->quantita ?></h3>
                     
                     <!-- prezzo -->
-                    <h3><?php echo $info->categoria ?></h3>
+                    <h3><?php echo $result ?></h3>
 
                     <!-- icona categoria -->
                     <i class="<?php echo $info->icona ?>"></i>
