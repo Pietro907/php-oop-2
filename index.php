@@ -1,7 +1,31 @@
 <?php
 
+/* variabili oggetti in vendita */
+$cuccia;
+$ciotola;
+$giunzaio;
+$croccantini;
+$scatolette;
+$spazzole;
+$rasoioElettrico;
+$antiparassitario;
+$telo;
+$teloAssorbenteMonouso;
+$medagliette;
+$giochi;
+$tiragraffi;
+$bustineBisogni;
+$saponi;
+$tagliaUnghie;
+$cornoCervo;
+$peluche;
+$pupazziGomma;
 
+/* categorie */
 
+//Cani
+
+//Gatti
 
 
 
@@ -23,5 +47,31 @@
 </head>
 <body>
     
+    <!-- card che contengono info -->
+    <!-- immagine, titolo, prezzo, icona della categoria  -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    
+                    <!-- immagine prodotto -->
+                    <img src="" alt="">
+
+                    <!-- titolo -->
+                    <h2></h2>
+
+                    <!-- prezzo -->
+                    <h3></h3>
+
+                    <!-- icona categoria -->
+                    <i></i>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
