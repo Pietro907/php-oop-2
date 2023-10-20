@@ -1,78 +1,45 @@
 <?php
 
-/* variabili oggetti in vendita */
 
-/* 
-    public $cuccia;
-    public $ciotola;
-    public $giunzaio;
-    public $croccantini;
-    public $scatolette;
-    public $spazzole;
-    public $rasoioElettrico;
-    public $antiparassitario;
-    public $telo;
-    public $teloAssorbenteMonouso;
-    public $medagliette;
-    public $giochi;
-    public $tiragraffi;
-    public $bustineBisogni;
-    public $saponi;
-    public $tagliaUnghie;
-    public $cornoCervo;
-    public $peluche;
-    public $pupazziGomma;
-
- */
-
-/* categorie */
-
-//Cani
-
-//Gatti
 
 /* inizio la creazione delle classi */
-class e_commerce {
 
-}
-
-class prodotti
+class Prodotti
 {
     public $nome;
     public $prezzo;
-    public $tipologia;
     public $immagine;
-    public $quantita;
     public $icona;
+    public $quantita;
 
-    public function __construct($nome, $prezzo, $tipologia, $immagine, $quantita, $icona) {
+    public function __construct($nome, $prezzo, $immagine, Categorie $icona, $quantita,) {
 
         $this->nome = $nome;
         $this->prezzo = $prezzo;
-        $this->tipologia = $tipologia;
         $this->immagine = $immagine;
-        $this->quantita = $quantita;
         $this->icona = $icona;
+        $this->quantita = $quantita;
+    }
+
+
+}
+
+
+class Categorie {
+
+    public $categoria;
+
+    
+    public function __construct($categoria) {
+        
+        $this->categoria = $categoria;
     }
 }
 
-$articoli = new prodotti('Collare', '10€', 'cane', 'https://picsum.photos/400/500', '1', 'fa-solid fa-cat');
-$cibo = new prodotti('Royal Canin', '10€', 'cane', 'https://picsum.photos/400/500', '1', 'fa-solid fa-cat');
-$tolettatura = new prodotti('Rasoio', '10€', 'cane', 'https://picsum.photos/400/500', '1', 'fa-solid fa-cat');
 
+$scalibor = new Prodotti('Scalibor', '80€', 'https://picsum.photos/400/500', new Categorie('Cane'),'fa-solid fa-dog', '1');
 
-
-$articoliArray = array($articoli, $cibo, $tolettatura);
-class categorie extends prodotti{
-    
-}
-class cani extends prodotti {
-
-}
-
-class gatti extends prodotti {
-
-}
+$articoliArray = array($scalibor);
 
 ?>
 
@@ -109,6 +76,12 @@ class gatti extends prodotti {
 
                     <!-- prezzo -->
                     <h3><?php echo $info->prezzo ?></h3>
+
+                    <!-- quantità -->
+                    <h3><?php echo $info->quantita ?></h3>
+                    
+                    <!-- prezzo -->
+                    <h3><?php echo $info->categoria ?></h3>
 
                     <!-- icona categoria -->
                     <i class="<?php echo $info->icona ?>"></i>
