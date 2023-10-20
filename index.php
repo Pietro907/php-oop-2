@@ -45,7 +45,6 @@ $articoliArray = array($scalibor, $scalibor, $scalibor, $scalibor, $scalibor, $s
 
 $result = $scalibor->categorie?->categoria;
 
-echo $result;
 
 ?>
 
@@ -71,13 +70,13 @@ echo $result;
 
             <?php foreach($articoliArray as $info): ?>
 
-            <div class="col-4">
-                <div class="card">
+            <div class="col-4 p-2 my-2">
+                <div class="card d-flex justify-content-center align-items-center p-5">
 
                     <!-- immagine prodotto -->
-                    <img style="width: 300px;" src="<?php echo $info->immagine ?>" alt="">
+                    <img style="width: 100%;" src="<?php echo $info->immagine ?>" alt="">
 
-                    <!-- titolo -->
+                    <!-- nome -->
                     <h2><?php echo $info->nome ?></h2>
 
                     <!-- prezzo -->
@@ -86,11 +85,13 @@ echo $result;
                     <!-- quantità -->
                     <h3><?php echo $info->quantita ?></h3>
                     
-                    <!-- prezzo -->
+                    <!-- categoria animale -->
                     <h3><?php echo $result ?></h3>
 
                     <!-- icona categoria -->
                     <i class="<?php echo $info->icona ?>"></i>
+
+                
 
                 </div>
             </div>
