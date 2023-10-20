@@ -43,7 +43,7 @@ $scalibor = new Prodotti('Scalibor', '80€', 'https://picsum.photos/400/500', n
 
 $articoliArray = array($scalibor, $scalibor, $scalibor, $scalibor, $scalibor, $scalibor);
 
-$result = $prodotti->categorie?->categoria;
+$result = $scalibor->categorie?->categoria;
 
 echo $result;
 
