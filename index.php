@@ -3,9 +3,10 @@
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 
-require_once __DIR__ . './categoty.php';
-require_once __DIR__ . './product.php';
-require_once __DIR__ . './item.php';
+include_once __DIR__ . './product.php';
+include_once __DIR__ . './categoty.php';
+include_once __DIR__ . './item.php';
+
 
 /* function checkNum($number) {
     if($number>1) {

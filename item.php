@@ -11,7 +11,7 @@ $gatti3 = new Prodotti('Ultima Cat Pollo', '€39,99', './assets/img/ultima-cat-
 
 $articoliArray = [$cani, $gatti, $cani2, $gatti2, $cani3, $gatti3];
 
-$result = $cani->$categorie?->categoria;
+//$result = $cani->$categorie?->categoria;
 
 //var_dump($cani->categorie?->categoria);
 
