@@ -1,5 +1,6 @@
 <?php
 
+
 /* inizio la creazione delle classi */
 
 class Prodotti
@@ -33,9 +34,9 @@ class Categorie
         $this->categoria = $categoria;
     }
 
-    public function get_categ() {
+/*     public function get_categ() {
         return $this.$categoria->categoria;
-    }
+    } */
 }
 
 
@@ -51,7 +52,7 @@ $gatti3 = new Prodotti('Ultima Cat Pollo', '€39,99', './assets/img/ultima-cat-
 $articoliArray = [$cani, $gatti, $cani2, $gatti2, $cani3, $gatti3];
 //var_dump($articoliArray);
 
-$result = $categoria->$categorie?->categoria;
+$result = $cani->$categorie?->categoria;
 
 var_dump($categoria->categorie?->categoria);
 
