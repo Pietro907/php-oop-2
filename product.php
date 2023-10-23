@@ -24,6 +24,9 @@ class Prodotti
     //Uso il trait
     use message1;
 
+
+    
+
 }
 
 trait message1 {
@@ -31,3 +34,6 @@ trait message1 {
         echo 'E-Commerce Animals Welcome!';
     }
 }
+
+
+

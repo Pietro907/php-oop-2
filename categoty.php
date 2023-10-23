@@ -8,7 +8,7 @@ class Categorie
         $this->categoria = $categoria;
     }
 
-    public function get_categ() {
+/*     public function get_categ() {
         return $this->categoria;
-    }
+    } */
 }

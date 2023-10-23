@@ -1,17 +1,48 @@
 <?php
 
-
+ini_set('display_errors',1);
+error_reporting(E_ALL);
 
 require_once __DIR__ . './categoty.php';
 require_once __DIR__ . './product.php';
 require_once __DIR__ . './item.php';
-/* 
-ini_set('display_errors',1);
-error_reporting(E_ALL); */
+
+/* function checkNum($number) {
+    if($number>1) {
+      throw new Exception("Value must be 1 or below");
+    }
+    return true;
+  }
+  
+  //trigger exception
+  checkNum(2);
+ */
+
+
+
+//create function with an exception
+function checkNum($quantità) {
+    if($quantità=='Quantità: 0KG') {
+      throw new Prodotti('Monge All Breeds Adult Salmone e Riso', '€59,99', './assets/img/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.webp', new Categorie('Cane'), 'fa-solid fa-dog', 'Non disponibile');
+    }
+    return true;
+  }
+  
+  //trigger exception in a "try" block
+  try {
+    checkNum(2);
+    //If the exception is thrown, this text will not be shown
+    echo 'If you see this, the number is 1 or below';
+  }
+  
+  //catch exception
+  catch(Exception $e) {
+    echo 'Message: ' .$e->getMessage();
+  }
+
 
 
 //var_dump($articoliArray);
-
 
 
 
@@ -42,7 +73,7 @@ error_reporting(E_ALL); */
 
             <?php foreach ($articoliArray as $info) : ?>
 
-                <?php include __DIR__ . './partials\col.php' ?>   
+                <?php include __DIR__ . './partials/col.php' ?>   
 
             <?php endforeach; ?>
 
