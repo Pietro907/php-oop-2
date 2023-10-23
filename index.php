@@ -1,11 +1,13 @@
 <?php
+
+
+
 require_once __DIR__ . './categoty.php';
 require_once __DIR__ . './product.php';
 require_once __DIR__ . './item.php';
-
-
-
-
+/* 
+ini_set('display_errors',1);
+error_reporting(E_ALL); */
 
 
 //var_dump($articoliArray);
@@ -33,6 +35,9 @@ require_once __DIR__ . './item.php';
     <!-- card che contengono info -->
     <!-- immagine, titolo, prezzo, icona della categoria  -->
     <div class="container mt-5">
+
+        <div class="title text-center text-primary shadow bg-dark"><h1><?php echo $cani->mgs1(); ?></h1></div>
+
         <div class="row m-5">
 
             <?php foreach ($articoliArray as $info) : ?>

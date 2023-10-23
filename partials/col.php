@@ -16,7 +16,7 @@
         <h5 class="my-1"><?php echo $result ?></h5>
 
         <!-- icona categoria -->
-        <i style="font-size: 25px;" class="py-2 <?php echo $info->icona ?>"><?php echo $articoli->mgs1(); ?></i>
+        <i style="font-size: 25px;" class="py-2 <?php echo $info->icona ?>"></i>
 
         <!-- prezzo -->
         <h5><?php echo $info->prezzo ?></h5>

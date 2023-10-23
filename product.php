@@ -28,6 +28,6 @@ class Prodotti
 
 trait message1 {
     public function mgs1(){
-        echo 'Metal Gear Solid 1, "funzione mgs1()s"';
+        echo 'E-Commerce Animals Welcome!';
     }
 }
