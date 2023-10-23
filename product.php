@@ -24,7 +24,20 @@ class Prodotti
     //Uso il trait
     use message1;
 
+    public function getQuantità(){
+        try {
+            //logica codice
 
+            if ($this->categorie != 'cane' && $this->categorie != 'gatto'){
+                $valore = $this->categorie;
+                return $valore;
+            }else{
+               throw new Exception ('Non disponibile');
+            }
+        }catch (Categorie $categorie){
+            exit('Aiuto');
+        }
+    }
     
 
 }
