@@ -5,7 +5,8 @@ error_reporting(E_ALL);
 
 include_once __DIR__ . './product.php';
 include_once __DIR__ . './categoty.php';
-include_once __DIR__ . './item.php';
+include_once __DIR__ . './item.php'; 
+
 
 
 /* function checkNum($number) {
